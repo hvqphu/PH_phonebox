@@ -1,0 +1,16 @@
+{
+  "name": "phonebox",
+  "version": "0.9.29",
+  "private": true,
+  "type": "module",
+  "description": "Turn an old Android phone into a desk panel for your computer.",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "node scripts/build-web.mjs",
+    "start": "node server.js",
+    "lint": "node --check server.js && node --check scripts/site.mjs && node --check scripts/build-web.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
